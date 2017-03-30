@@ -11,7 +11,8 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <script src="js/libs/angular.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link href="css/owfont-regular.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
 	
     
     <title>Document</title>
@@ -30,7 +31,7 @@
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="City name..." id="city_name" ng-model="cityName">
                     <span class="input-group-btn">
-        <button class="btn btn-default" type="button" ng-click="getTemperature(cityName)">>Go!</button>
+        <button class="btn btn-default" type="button" ng-click="getTemperature(cityName)">Go!</button>
       </span>
                 </div>
                 <!-- /input-group -->
@@ -39,26 +40,26 @@
         </div>
         <!-- /.row -->
     </div>
-
+    
        <div id="weather_wrapper">
         <div class="weatherCard">
             <div class="currentTemp">
-                <span class="temp" ng-hide="weather_temperature==null">{{weather_temperature}}</span>
+                <span class="temp" ng-hide="weather_temperature==null">{{weather_temperature}} &deg;</span>
                 <span class="location"><p>{{city_name}}</p></span>
             </div>
             <div class="currentWeather">
-                <span class="conditions" ng-hide="weather_icon==null"><img src="http://openweathermap.org/img/w/{{weather_icon}}.png"</span>
+                <!-- <span class="conditions" ng-hide="weather_icon==null"><img src="http://openweathermap.org/img/w/{{weather_icon}}.png"</span> -->
+                <i class="owf owf-{{weather_code}}"></i>
             </div>
         </div>
         <div class="deezer-widget-player" data-src="https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=false&width=400&height=90&color=007FEB&layout=dark&size=medium&type=playlist&id=30595446&app_id=1" data-scrolling="no" data-frameborder="0" data-allowTransparency="true" data-width="400" data-height="90"></div>
     </div>
 
-</duv>
+</div>
     
 
 <!-- <p ng-hide="weather_description==null"><strong>Description :</strong>{{weather_description}}</p> -->
 
-</div>
 
  <script src="js/controllers/mainController.js"></script>
 <script src="js/app.js"></script>

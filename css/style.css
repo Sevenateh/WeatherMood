@@ -47,6 +47,10 @@ h1{
 
 }
 
+.weathercode {
+	color:black;
+}
+
 .search-box{
     display: flex;
     justify-content: center;
