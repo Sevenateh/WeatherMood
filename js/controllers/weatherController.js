@@ -1,16 +1,14 @@
-function mainController($scope, $http) {
-    const URL = "http://api.openweathermap.org/data/2.5/find?q="
-    const APPID = "7c93d8ef34a0d72f988bc1aca705fab8";
-    const IMGURL = "http://openweathermap.org/img/w/";
+var app=angular.module("temperatureApp",[]);
 
-    $scope.city = [];
-
-        $http.get(URL + citysubmitted + "&units=metric&APPID=" + APPID)
-                .success(function(data) {
-                        $scope.weather = data;
-                })
-                .error(function(data) {
-                        console.log('Error: ' + data);
-                }); 
-
-};
+	app.controller("weatherController", function($scope,$http){
+		$scope.getTemperature=function(cityName){			
+			$http.get("http://api.openweathermap.org/data/2.5/weather?q="+cityName+",&APPID=012581a1cd5d98c0b591970c753d2a12")
+				.then(function(response){
+					$scope.weather_description=response.data.weather["0"].description;
+					$scope.weather_icon=response.data.weather.icon;
+					$scope.city_name=cityName;
+				},function(response){
+					$scope.temperatures="Some Error Occured";
+				});
+		}
+	})		
