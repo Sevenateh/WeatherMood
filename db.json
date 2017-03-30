@@ -1,0 +1,49 @@
+{
+    "weather_music": [
+        {
+            "id": 1,
+            "weather_type": "clear sky",
+            "deezer_playlist_id": "281760401",
+        },
+        {
+            "id": 2,
+            "weather_type": "few clouds",
+            "deezer_playlist_id": "726989395",
+        },
+        {
+            "id": 3,
+            "weather_type": "scattered clouds",
+            "deezer_playlist_id": "15806750",
+        },
+        {
+            "id": 4,
+            "weather_type": "broken clouds",
+            "deezer_playlist_id": "23896561",
+        },
+        {
+            "id": 5,
+            "weather_type": "shower rain",
+            "deezer_playlist_id": "88696701",
+        },
+         {
+            "id": 6,
+            "weather_type": "rain",
+            "deezer_playlist_id": "2585932364",
+        },
+         {
+            "id": 7,
+            "weather_type": "thunderstorm",
+            "deezer_playlist_id": "1574790001",
+        },
+         {
+            "id": 8,
+            "weather_type": "snow",
+            "deezer_playlist_id": "1574790001",
+        },
+         {
+            "id": 9,
+            "weather_type": "mist",
+            "deezer_playlist_id": "2753215784",
+        },
+    ]
+}
