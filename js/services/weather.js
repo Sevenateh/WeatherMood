@@ -1,8 +1,7 @@
-// js/services/todos.js
-angular.module('todoService', [])
+// js/services/weather.js
+angular.module('weatherService', [])
 
-    // super simple service
-    // each function returns a promise object 
+    // chaque function retourne un objet 
     .factory('Todos', function($http) {
         return {
             get : function() {
