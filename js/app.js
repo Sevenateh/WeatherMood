@@ -1,2 +1,2 @@
-var app = angular.module('weathermood', [])
+var app = angular.module('weatherMood', [])
     .controller('mainController', mainController);
