@@ -101,7 +101,14 @@ h1{
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 20px;
-	
+}
+
+.owf {
+	display: flex;
+	font-size: 15em;
+	text-align: center;
+	margin: 0 auto;
+
 
 }
 .conditions{
