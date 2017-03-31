@@ -1,2 +1,4 @@
 var app = angular.module('weatherMood', [])
-    .controller('mainController', mainController);
+    app.controller('mainController', mainController);
+    app.controller('musicController', musicController);
+   

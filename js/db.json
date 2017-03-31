@@ -1,5 +1,4 @@
-{
-    "weather_music": [
+[
         {
             "id": 1,
             "weather_type": "clear sky",
@@ -46,4 +45,3 @@
             "deezer_playlist_id": "2753215784",
         },
     ]
-}
